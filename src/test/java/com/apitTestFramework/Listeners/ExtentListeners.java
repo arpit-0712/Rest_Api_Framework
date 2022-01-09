@@ -41,7 +41,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
     public void onTestFailure(ITestResult result) {
 
-testReport.get().fail(result.getThrowable().getMessage().toString());
+        testReport.get().fail(result.getThrowable().getMessage().toString());
         String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
         testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
                 + "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details>" + " \n");
@@ -81,19 +81,19 @@ testReport.get().fail(result.getThrowable().getMessage().toString());
 
     @Override
     public void onStart(ISuite suite) {
-       // TODO list
+        // TODO list
     }
 
     @Override
     public void onFinish(ISuite suite) {
         try {
-            messageBody = "http://"+ InetAddress.getLocalHost().getHostAddress()+":8080/job/GitCheckAPIProject/HTML_20Report/"+fileName;
+            messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/GitCheckAPIProject/HTML_20Report/" + fileName;
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
         MonitoringMail main = new MonitoringMail();
         try {
-            main.sendMail(TestConfig.server,TestConfig.from, TestConfig.to,TestConfig.subject,messageBody);
+            main.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
         } catch (MessagingException e) {
             e.printStackTrace();
         }
