@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Test_Suite">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Test_Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7})">validCreateCustomerAPIWithInvalidSecretKey({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r})">validCreateCustomerAPIWithInvalidSecretKey({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t})">validCreateCustomerAPIWithInvalidSecretKey({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6})">validCreateCustomerAPIWithInvalidSecretKey({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js})">validCreateCustomerAPIWithInvalidSecretKey({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithInvalidSecretKey({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175})">validCreateCustomerAPIWithInvalidSecretKey({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam am...)">validCreateCustomerAPIWithValidSecretKey({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam am...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi n...)">validCreateCustomerAPIWithValidSecretKey({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi n...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.})">validCreateCustomerAPIWithValidSecretKey({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.})">validCreateCustomerAPIWithValidSecretKey({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderi...)">validCreateCustomerAPIWithValidSecretKey({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="com.apitTestFramework.testcases.CreateCustomerTest" hash-for-method="validCreateCustomerAPIWithValidSecretKey({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.})">validCreateCustomerAPIWithValidSecretKey({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.apitTestFramework.testcases.CreateCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithInvalidSecretKey({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175})">
+                  </a> <!-- validCreateCustomerAPIWithInvalidSecretKey({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175}) -->
+                  <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey</span>
+                  <span class="parameters">({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.apitTestFramework.testcases.CreateCustomerTest.validCreateCustomerAPIWithInvalidSecretKey(CreateCustomerTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.apitTestFramework.testcases.CreateCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam am...)">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam am...) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam amet aspernatur.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi n...)">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi n...) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi nam illo.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.})">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.}) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.})">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.}) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderi...)">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderi...) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderit maxime.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCreateCustomerAPIWithValidSecretKey({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.})">
+                  </a> <!-- validCreateCustomerAPIWithValidSecretKey({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.}) -->
+                  <span class="method-name">validCreateCustomerAPIWithValidSecretKey</span>
+                  <span class="parameters">({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/arpitsengar/IdeaProjects/Rest_Api_Framework/src/test/resources/runner/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;All Test Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.apitTestFramework.Listeners.ExtentListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Customer Create API Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.apitTestFramework.testcases.CreateCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Customer Create API Test --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Customer Create API Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(0, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(0, 3, 2902);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(1, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(1, 3, 1219);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(2, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(2, 3, 1044);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(3, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(3, 3, 992);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(4, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(4, 3, 963);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(5, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(5, 3, 936);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validCreateCustomerAPIWithValidSecretKey')
+data.setCell(6, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(6, 3, 909);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(7, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(7, 3, 708);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(8, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(8, 3, 705);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(9, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(9, 3, 704);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(10, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(10, 3, 697);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validCreateCustomerAPIWithInvalidSecretKey')
+data.setCell(11, 2, 'com.apitTestFramework.testcases.CreateCustomerTest')
+data.setCell(11, 3, 682);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.apitTestFramework.testcases.CreateCustomerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=qsvm26@gmail.com, name=Hisako Weber II, description=j73ss996b6})</span>
+                <span class="method-start">545 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=nyhw95@gmail.com, name=Julian Nienow PhD, description=dtayl77hb7})</span>
+                <span class="method-start">3464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=uxwp08@gmail.com, name=Riva Wilderman, description=466uza5s8r})</span>
+                <span class="method-start">4170 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=qtvf61@gmail.com, name=Alice Tremblay, description=djz5us81js})</span>
+                <span class="method-start">4870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=iruc99@gmail.com, name=Bunny Schoen DDS, description=6gww3l915t})</span>
+                <span class="method-start">5553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validCreateCustomerAPIWithInvalidSecretKey({email=wynz08@gmail.com, name=Dr. Tim Jakubowski, description=3xha33c175})</span>
+                <span class="method-start">6264 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=hung.rutherford@yahoo.com, name=Sydney Quigley, description=Earum enim et maxime reprehenderi...)</span>
+                <span class="method-start">6977 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=precious.pollich@hotmail.com, name=Guillermo Tremblay, description=Incidunt aut laboriosam am...)</span>
+                <span class="method-start">8022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=roma.hoeger@gmail.com, name=Sarita Runte, description=Consequuntur corporis labore.})</span>
+                <span class="method-start">9241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=priscila.heidenreich@hotmail.com, name=Thanh Heller, description=Incidunt eos voluptatem.})</span>
+                <span class="method-start">10151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=cathi.gusikowski@hotmail.com, name=Miss Rudolph Walsh, description=Quam atque vel excepturi n...)</span>
+                <span class="method-start">11114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCreateCustomerAPIWithValidSecretKey({email=liz.kuhn@gmail.com, name=Mrs. Sabina Nader, description=Praesentium sed modi culpa.})</span>
+                <span class="method-start">12107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13618 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

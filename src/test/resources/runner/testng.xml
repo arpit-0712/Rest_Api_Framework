@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+     <listener class-name="com.apitTestFramework.Listeners.ExtentListeners"/>
+    </listeners>
+    <test name="Customer Create API Test">
+        <classes>
+            <class name="com.apitTestFramework.testcases.CreateCustomerTest"/>
+        </classes>
+    </test>
+    <test name="Delete Customer Test">
+        <classes>
+            <class name="com.apitTestFramework.testcases.DeleteCustomerTest"/>
+        </classes>
+    </test>
+</suite>
