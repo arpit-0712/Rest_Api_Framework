@@ -1,20 +1,23 @@
 package com.apitTestFramework.Listeners;
 
+import com.apitTestFramework.utilities.MonitoringMail;
+import com.apitTestFramework.utilities.TestConfig;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
 
+import javax.mail.MessagingException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Date;
 
-public class ExtentListeners implements ITestListener {
-
+public class ExtentListeners implements ITestListener, ISuiteListener {
+    static String messageBody;
     static Date d = new Date();
     static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
@@ -76,4 +79,25 @@ testReport.get().fail(result.getThrowable().getMessage().toString());
 
     }
 
+    @Override
+    public void onStart(ISuite suite) {
+       // TODO list
+    }
+
+    @Override
+    public void onFinish(ISuite suite) {
+        try {
+            messageBody = "http://"+ InetAddress.getLocalHost().getHostAddress()+":8080/job/GitCheckAPIProject/HTML_20Report/"+fileName;
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        MonitoringMail main = new MonitoringMail();
+        try {
+            main.sendMail(TestConfig.server,TestConfig.from, TestConfig.to,TestConfig.subject,messageBody);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 }
