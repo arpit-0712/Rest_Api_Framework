@@ -14,4 +14,14 @@
             <class name="com.apitTestFramework.testcases.DeleteCustomerTest"/>
         </classes>
     </test>
+    <test name="Get CustomerDetails Test">
+        <classes>
+            <class name="com.apitTestFramework.testcases.GetCustomerDetailsTest"/>
+        </classes>
+    </test>
+    <test name="GetCustomerList Test">
+        <classes>
+            <class name="com.apitTestFramework.testcases.GetAllCustomerTest"/>
+        </classes>
+    </test>
 </suite>
