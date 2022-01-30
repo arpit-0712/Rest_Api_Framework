@@ -1,8 +1,6 @@
 package com.apitTestFramework.APIs;
 
-import com.apitTestFramework.Listeners.ExtentListeners;
 import com.apitTestFramework.setUp.BaseTest;
-import com.aventstack.extentreports.Status;
 import io.restassured.response.Response;
 
 import java.util.Hashtable;

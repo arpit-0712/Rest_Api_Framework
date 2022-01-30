@@ -16,6 +16,7 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Date;
 
+
 public class ExtentListeners implements ITestListener, ISuiteListener {
     static String messageBody;
     static Date d = new Date();
@@ -25,25 +26,30 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 
-
     public void onTestStart(ITestResult result) {
+
+
         ExtentTest test = extent.createTest(result.getTestClass().getName() + "     @TestCase : " + result.getMethod().getMethodName());
         testReport.set(test);
+
+
     }
 
     public void onTestSuccess(ITestResult result) {
+
 
         String methodName = result.getMethod().getMethodName();
         String logText = "<b>" + "TEST CASE:- " + methodName.toUpperCase() + " PASSED" + "</b>";
         Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
         testReport.get().pass(m);
+
+
     }
 
     public void onTestFailure(ITestResult result) {
-
         testReport.get().fail(result.getThrowable().getMessage().toString());
         String exceptionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-        testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occured:Click to see"
+        testReport.get().fail("<details>" + "<summary>" + "<b>" + "<font color=" + "red>" + "Exception Occurred:Click to see"
                 + "</font>" + "</b >" + "</summary>" + exceptionMessage.replaceAll(",", "<br>") + "</details>" + " \n");
 
 
@@ -68,6 +74,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
     public void onStart(ITestContext context) {
 
+
     }
 
     public void onFinish(ITestContext context) {
@@ -79,25 +86,29 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 
     }
 
-    @Override
     public void onStart(ISuite suite) {
-        // TODO list
+        // TODO Auto-generated method stub
+
     }
 
-    @Override
     public void onFinish(ISuite suite) {
+
+
         try {
-            messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/GitCheckAPIProject/HTML_20Report/" + fileName;
+            messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/APITestingFramework/Extent_20Reports/" + fileName;
         } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-        MonitoringMail main = new MonitoringMail();
-        try {
-            main.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
-        } catch (MessagingException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
+        MonitoringMail mail = new MonitoringMail();
+        try {
+            mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
+        }  catch (MessagingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
 
     }
+
 }

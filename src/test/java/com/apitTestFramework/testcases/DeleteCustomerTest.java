@@ -12,11 +12,11 @@ import org.testng.annotations.Test;
 import java.util.Hashtable;
 
 public class DeleteCustomerTest extends BaseTest {
-    @Test(dataProviderClass = DataUtil.class, dataProvider = "getData")
+    @Test(dataProviderClass = DataUtil.class, dataProvider = "getData",enabled = false)
     public void deleteCustomer(Hashtable<String, String> data) {
         Response response = DeleteCustomerAPI.sendDeleteRequestToDeleteCustomerAPIWithValidId(data);
-        response.prettyPrint();
         ExtentListeners.testReport.get().info(data.toString());
+        response.prettyPrint();
         System.out.println(response.statusCode());
 
 

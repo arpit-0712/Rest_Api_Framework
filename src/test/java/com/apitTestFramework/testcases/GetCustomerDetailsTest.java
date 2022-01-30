@@ -13,6 +13,7 @@ public class GetCustomerDetailsTest extends BaseTest {
     @Test(dataProviderClass = DataUtil.class, dataProvider = "getData")
     public void getCustomerDetails(Hashtable<String, String> data) {
         Response response = GetCustomerDetailsAPI.sendGetRequestToForCustomerAPIWithValidId(data);
+        ExtentListeners.testReport.get().info(response.prettyPrint());
         response.prettyPrint();
 
 

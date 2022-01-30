@@ -17,7 +17,7 @@ public class CreateCustomerAPI extends BaseTest {
                 .formParam("email", data.get("email"))
                 .formParam("description", data.get("description"))
                 .post(configProp.getProperty("customerAPIEndPoint"));
-        ExtentListeners.testReport.get().info(data.toString());
+
         return response;
     }
 
@@ -30,7 +30,7 @@ public class CreateCustomerAPI extends BaseTest {
                 .formParam("description", invalid_data.get("description"))
                 .post(configProp.getProperty("customerAPIEndPoint"));
         ExtentListeners.testReport.get().info(invalid_data.toString());// This line is added to determine what
-                                                                        // data has been input
+        // data has been input
         return response;
     }
 }

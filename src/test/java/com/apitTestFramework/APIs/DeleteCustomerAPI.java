@@ -1,6 +1,5 @@
 package com.apitTestFramework.APIs;
 
-import com.apitTestFramework.Listeners.ExtentListeners;
 import com.apitTestFramework.setUp.BaseTest;
 import io.restassured.response.Response;
 
