@@ -104,7 +104,7 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
         MonitoringMail mail = new MonitoringMail();
         try {
             mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
-        }  catch (MessagingException e) {
+        } catch (MessagingException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
